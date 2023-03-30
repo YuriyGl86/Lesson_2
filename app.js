@@ -23,4 +23,6 @@ function primesFinder(n){
     return res
 }
 
-console.log(primesFinder(1000))
+console.time('app')
+console.log(primesFinder(process.argv[2]))
+console.timeEnd('app')
